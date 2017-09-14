@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. test.sh
+
 help()
 {
 cat << HELP
@@ -74,3 +76,4 @@ while [ -n "$binnum" ];do
 done
 
 echo "$sum"
+hello
