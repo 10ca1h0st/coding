@@ -2,6 +2,7 @@
 
 public class ThreadDemo{
     public static void main(String[] args){
+        //Thread thd = Thread.currentThread();
         Runnable r = new Runnable() {
             @Override
             public void run() {
@@ -9,6 +10,12 @@ public class ThreadDemo{
                 int count = 0;
                 while(!Thread.interrupted()) {
                     System.out.println(name + ": " + count++);
+                    //thd.interrupt();
+                    /*try{
+                        Thread.sleep(3000);
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }*/
                 }
 
             }
@@ -20,7 +27,7 @@ public class ThreadDemo{
         try{
             Thread.sleep(5);
         }catch (Exception e){
-            System.out.println("Error");
+            e.printStackTrace();
         }
         thdA.interrupt();
         thdB.interrupt();
