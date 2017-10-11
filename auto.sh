@@ -4,6 +4,10 @@ dir_full=`pwd`
 dir=`basename $dir_full`
 commit=$1
 passwd=$2
+if [ $# -ne 2 ];then
+echo "Usage:$0 commit passwd"
+exit
+fi
 
 /usr/bin/expect << EOF
 set timeout 20
