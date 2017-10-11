@@ -6,7 +6,6 @@ commit=$1
 passwd=$2
 
 /usr/bin/expect << EOF
-
 set timeout 20
 spawn git add .
 spawn git commit -m"$commit"
