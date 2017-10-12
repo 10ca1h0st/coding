@@ -44,6 +44,9 @@ class Call {
 }
 
 public class Test{
+    public Test(){
+
+    }
     public static void main(String[] args){
         System.out.println("可用的处理器数量:"+Runtime.getRuntime().availableProcessors());
         Call call = new Call();
