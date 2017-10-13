@@ -34,6 +34,7 @@ class MyThread extends Thread{
             System.out.println("i am alive again");
         }
     }
+
 }
 
 class Add{}
