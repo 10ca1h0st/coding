@@ -15,7 +15,7 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
+            <state relative-caret-position="283">
               <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,16 +44,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PC.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="-189">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
               <folding>
                 <element signature="e#1104#1105#0" expanded="true" />
                 <element signature="e#1130#1131#0" expanded="true" />
                 <element signature="e#1465#1466#0" expanded="true" />
                 <element signature="e#1491#1492#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CanWaitBeInterrupted.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CanWaitBeInterrupted.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,6 +93,7 @@
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/DeadLockDemo.java" />
         <option value="$PROJECT_DIR$/src/PC.java" />
+        <option value="$PROJECT_DIR$/src/CanWaitBeInterrupted.java" />
       </list>
     </option>
   </component>
@@ -154,7 +168,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PC">
+  <component name="RunManager" selected="Application.CanWaitBeInterrupted">
+    <configuration name="CanWaitBeInterrupted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CanWaitBeInterrupted" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ThreadsAndConcurrency" />
+      <envs />
+    </configuration>
     <configuration name="DeadLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="DeadLockDemo" />
@@ -292,18 +320,20 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Test" />
       <item index="1" class="java.lang.String" itemvalue="Application.ThreadDemo" />
       <item index="2" class="java.lang.String" itemvalue="Application.DeadLockDemo" />
       <item index="3" class="java.lang.String" itemvalue="Application.PC" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CanWaitBeInterrupted" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.PC" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DeadLockDemo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ThreadDemo" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.CanWaitBeInterrupted" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PC" />
+        <item index="2" class="java.lang.String" itemvalue="Application.DeadLockDemo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ThreadDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -326,12 +356,12 @@
       <workItem from="1507710413445" duration="9000" />
       <workItem from="1507768135289" duration="2269000" />
       <workItem from="1507811693504" duration="2178000" />
-      <workItem from="1507902387194" duration="2914000" />
+      <workItem from="1507902387194" duration="5839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16360000" />
+    <option name="totallyTimeSpent" value="19285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="264" y="45" width="1400" height="1000" extended-state="0" />
@@ -520,16 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DeadLockDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -546,15 +566,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="51" column="36" lean-forward="false" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="-189">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
           <folding>
             <element signature="e#1104#1105#0" expanded="true" />
             <element signature="e#1130#1131#0" expanded="true" />
             <element signature="e#1465#1466#0" expanded="true" />
             <element signature="e#1491#1492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CanWaitBeInterrupted.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
           </folding>
         </state>
       </provider>
