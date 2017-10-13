@@ -49,7 +49,7 @@ class Producer extends Thread{
     @Override
     public void run(){
         for(char ch = 'A';ch<='Z';ch++){
-            synchronized (s) {
+            synchronized (s) {//锁可重入
                 s.setSharedChar(ch);
                 System.out.println(ch + " produced by Producer");
             }
