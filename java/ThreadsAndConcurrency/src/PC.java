@@ -46,8 +46,10 @@ class Producer extends Thread{
     @Override
     public void run(){
         for(char ch = 'A';ch<='Z';ch++){
-            s.setSharedChar(ch);
-            System.out.println(ch+" produced by Producer");
+            synchronized (s) {
+                s.setSharedChar(ch);
+                System.out.println(ch + " produced by Producer");
+            }
         }
     }
 
@@ -63,8 +65,10 @@ class Consumer extends Thread{
     public void run(){
         char ch;
         do{
-            ch = s.getSharedChar();
-            System.out.println(ch+" consumed by Consumer");
+            synchronized (s) {
+                ch = s.getSharedChar();
+                System.out.println(ch + " consumed by Consumer");
+            }
         }while(ch != 'Z');
     }
 }
