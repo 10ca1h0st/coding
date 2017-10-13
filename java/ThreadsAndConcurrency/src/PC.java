@@ -14,6 +14,8 @@ class Shared{
     synchronized void setSharedChar(char c){
         while(!writeable)
             try{
+                //为了证明notifyAll()之后，所有的线程都是平等地竞争，不管是wait()醒来的线程，还是别的线程
+                //System.out.println("PPPPPPPPP");
                 wait();
             }catch (InterruptedException ie){
                 ie.printStackTrace();
@@ -27,6 +29,7 @@ class Shared{
     synchronized char getSharedChar(){
         while(writeable)
             try{
+                //System.out.println("CCCCCCCCC");
                 wait();
             }catch (InterruptedException ie){
                 ie.printStackTrace();
