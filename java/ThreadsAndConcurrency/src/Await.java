@@ -3,8 +3,9 @@ public class Await {
         Counter counter = new Counter();
         Runnable r1 = ()->{
           System.out.println(Thread.currentThread().getName()+" am in waiting");
-          counter.setCount();
+          counter.count++;
           try{
+              System.out.println(Thread.currentThread().getName()+" will sleep");
               Thread.sleep(2000);
           }catch (InterruptedException ie){
 
@@ -23,7 +24,7 @@ public class Await {
         };
 
         Runnable r2 = ()->{
-            while(counter.getCount() < 3){
+            while(counter.count < 3){
                 try{
                     Thread.sleep(200);
                 }catch (InterruptedException ie){
@@ -50,16 +51,16 @@ public class Await {
 }
 
 class Counter{
-    int count;
+    volatile int  count;
     volatile boolean wake;
     Counter(){
         this.count = 0;
         this.wake = false;
     }
-    synchronized void setCount(){
+    /*synchronized void setCount(){
         this.count++;
     }
     synchronized int getCount(){
         return this.count;
-    }
+    }*/
 }
