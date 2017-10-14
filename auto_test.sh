@@ -7,7 +7,7 @@ passwd=$2
 git add .
 git commit -m"$commit" > /dev/null
 /usr/bin/expect << EOF
-set timeout 30
+set timeout 100000
 spawn git push https://github.com/wujiaming123/${dir}.git master
 expect "'https://github.com':"
 send "wujiaming123\n"
